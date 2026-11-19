@@ -4,7 +4,7 @@ const os = require('os');
 const server = http.createServer((req, res) => {
   if (req.url === '/') {
     res.writeHead(200, { 'Content-Type': 'text/plain; charset=utf-8' });
-    res.end('Bienvenido a la API de estado de Distribuciones Mediterráneo S.L.\n');
+    res.end('Bienvenido, Roberto\n');
   } else if (req.url === '/estado') {
     const estado = {
       servicio: 'api_node',
